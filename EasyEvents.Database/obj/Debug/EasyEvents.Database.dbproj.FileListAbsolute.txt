@@ -1,0 +1,8 @@
+D:\sandeep\github\Eazer\EasyEvents.Database\sql\debug\EasyEvents_Script.PreDeployment.sql
+D:\sandeep\github\Eazer\EasyEvents.Database\sql\debug\EasyEvents_Script.PostDeployment.sql
+D:\sandeep\github\Eazer\EasyEvents.Database\sql\debug\EasyEvents_Database.sqlsettings
+D:\sandeep\github\Eazer\EasyEvents.Database\sql\debug\EasyEvents_Database.sqldeployment
+D:\sandeep\github\Eazer\EasyEvents.Database\sql\debug\EasyEvents_Database.sqlcmdvars
+D:\sandeep\github\Eazer\EasyEvents.Database\sql\debug\EasyEvents.Database.deploymanifest
+D:\sandeep\github\Eazer\EasyEvents.Database\sql\debug\EasyEvents.Database.dbschema
+D:\sandeep\github\Eazer\EasyEvents.Database\obj\Debug\EasyEvents.Database.dbschema

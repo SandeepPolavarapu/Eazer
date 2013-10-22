@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="ie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>@ViewBag.Title</title>
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	
+	 <!-- Main Style -->
+	<link rel="stylesheet" href="../../Content/style.css" /> 
+  
+	<!-- Color Style -->
+	<link rel="stylesheet" href="../../Content/blue.css" name="colors" />
+  
+	<!-- Layout Style -->
+	<link rel="stylesheet" href="../../Content/wide.css" name="layout" />
+    <!--[if lt IE 9]>
+      <script src="../../Scripts/html5.js"></script>
+  <![endif]-->
+	<link href="../../favicon.ico" rel="shortcut icon" type="image/x-icon" />
+</head>
+<body>
+	<div id="wrap" class="boxed">
+  
+	<header>
+	 <div class="top-bar">
+	   <div class="container clearfix">
+		<div class="slidedown">
+		
+		 <div class="eight columns">
+		   <div class="phone-mail">
+			 <a><i class="icon-phone"></i> Phone : +91 8143776677</a>
+			 <a href="info@easyevents.in"><i class="icon-envelope-alt"></i> Mail : info@easyevents.in</a>
+		   </div><!-- End phone-mail -->
+		 </div>
+		 <div class="eight columns">
+		   <div class="social">
+		   <a href="#"><i class="social_icon-facebook s-18"></i></a>
+           <a href="#"><i class="social_icon-gplus s-18"></i></a> 
+		   </div>
+		  </div><!-- End social-icons -->
+		  
+		 </div><!-- End slidedown -->
+	   </div><!-- End Container -->
+	   
+	 </div><!-- End top-bar -->
+	 
+	 <div class="main-header">
+	   <div class="container clearfix">
+		 <a href="#" class="down-button"><i class="icon-angle-down"></i></a><!-- this appear on small devices -->
+		 <div class="one-third column">
+		  <div class="logo">
+		  <a href="index.html">
+			<img src="images/logo.png" alt="Invention - Creative Responsive Theme" />
+		  </a>
+		  </div>
+		 </div><!-- End Logo -->
+		 
+		 <div class="two-thirds column">
+		  <nav id="menu" class="navigation" role="navigation">
+		  <a href="#">Show navigation</a><!-- this appear on small devices -->
+		  <ul id="nav">
+			<li class="active"><a href="index.html">Home</a</li>
+			<li><a href="about.html#1">Venues</a></li>
+			<li><a href="shortcodes.html#2">Catering</a></li>
+			<li><a href="portfolio_4.html#4">Decoration</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		  </ul>
+		 </nav>
+		</div><!-- End Menu -->
+	   
+	   </div><!-- End Container -->
+	 </div><!-- End main-header -->
+	 
+   </header><!-- <<< End Header >>> -->
+   
+	<div>
+		@RenderBody()
+	</div>
+    <footer>  
+     
+     <div class="footer-down">
+      <div class="container clearfix">
+        
+        <div class="eight columns">
+         <span class="copyright">
+         © Copyright 2013 <a href="index.html">EasyEvents</a>. All Rights Reserved.</span>
+        </div><!-- End copyright -->
+        
+        <div class="eight columns">
+          <div class="social">
+           <a href="#"><i class="social_icon-facebook s-18"></i></a>
+           <a href="#"><i class="social_icon-gplus s-18"></i></a>           
+          </div>
+        </div><!-- End social icons -->
+        
+      </div><!-- End container -->
+     </div><!-- End footer-top -->
+     
+   </footer><!-- <<< End Footer >>> -->
+  
+  </div><!-- End wrap -->
+    <script type="text/javascript" src="../../Scripts/jquery-1.9.1.min.js"></script> <!-- jQuery library -->
+    <script type="text/javascript" src="../../Scripts/jquery.ui.totop.js"></script> <!-- UItoTop plugin  -->
+    <script type="text/javascript" src="../../Scripts/doubletaptogo.js"></script> <!-- Touch-friendly Script  -->
+    <script type="text/javascript" src="../../../Scripts/jquery.flexslider.js"></script> 
+    <script type="text/javascript" src="../../Scripts/custom.js"></script> <!-- Custom Js file for javascript in html -->
+</body>
+</html>

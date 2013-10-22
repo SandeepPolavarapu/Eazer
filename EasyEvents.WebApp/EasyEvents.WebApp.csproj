@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{472FCD53-D052-42A6-9CBF-32A7CF7784A2}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EasyEvents</RootNamespace>
+    <AssemblyName>EasyEvents</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.6\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.WebRequest.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.20710.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.20710.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="Content\base.css" />
+    <Content Include="Content\blue.css" />
+    <Content Include="Content\custom.css" />
+    <Content Include="Content\font-awesome\css\font-awesome.min.css" />
+    <Content Include="Content\font-awesome\font\fontawesome-webfont.svg" />
+    <Content Include="Content\font.css" />
+    <Content Include="Content\fontello\css\fontello.css" />
+    <Content Include="Content\fontello\font\fontello.svg" />
+    <Content Include="Content\font\Roboto-Black-webfont.svg" />
+    <Content Include="Content\font\Roboto-BlackItalic-webfont.svg" />
+    <Content Include="Content\font\Roboto-Bold-webfont.svg" />
+    <Content Include="Content\font\Roboto-BoldCondensed-webfont.svg" />
+    <Content Include="Content\font\Roboto-BoldCondensedItalic-webfont.svg" />
+    <Content Include="Content\font\Roboto-BoldItalic-webfont.svg" />
+    <Content Include="Content\font\Roboto-Condensed-webfont.svg" />
+    <Content Include="Content\font\Roboto-CondensedItalic-webfont.svg" />
+    <Content Include="Content\font\Roboto-Italic-webfont.svg" />
+    <Content Include="Content\font\Roboto-Light-webfont.svg" />
+    <Content Include="Content\font\Roboto-LightItalic-webfont.svg" />
+    <Content Include="Content\font\Roboto-Medium-webfont.svg" />
+    <Content Include="Content\font\Roboto-MediumItalic-webfont.svg" />
+    <Content Include="Content\font\Roboto-Regular-webfont.svg" />
+    <Content Include="Content\font\Roboto-Thin-webfont.svg" />
+    <Content Include="Content\font\Roboto-ThinItalic-webfont.svg" />
+    <Content Include="Content\javascript.css" />
+    <Content Include="Content\shortcodes.css" />
+    <Content Include="Content\skeleton.css" />
+    <Content Include="Content\skins\white.css" />
+    <Content Include="Content\style.css" />
+    <Content Include="Content\wide.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\home\catering.JPG" />
+    <Content Include="Images\home\decoration.JPG" />
+    <Content Include="Images\home\venue.JPG" />
+    <Content Include="Scripts\custom.js" />
+    <Content Include="Scripts\doubletaptogo.js" />
+    <Content Include="Scripts\html5.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\jquery.ui.totop.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+    <Folder Include="Views\Decoration\" />
+    <Folder Include="Views\Food\" />
+    <Folder Include="Views\Venue\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_Layout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\_ViewStart.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\font-awesome\font\fontawesome-webfont.eot" />
+    <None Include="Content\font-awesome\font\fontawesome-webfont.ttf" />
+    <None Include="Content\font-awesome\font\fontawesome-webfont.woff" />
+    <None Include="Content\font-awesome\font\FontAwesome.otf" />
+    <None Include="Content\fontello\font\fontello.eot" />
+    <None Include="Content\fontello\font\fontello.ttf" />
+    <None Include="Content\fontello\font\fontello.woff" />
+    <None Include="Content\font\Roboto-Black-webfont.eot" />
+    <None Include="Content\font\Roboto-Black-webfont.ttf" />
+    <None Include="Content\font\Roboto-Black-webfont.woff" />
+    <None Include="Content\font\Roboto-BlackItalic-webfont.eot" />
+    <None Include="Content\font\Roboto-BlackItalic-webfont.ttf" />
+    <None Include="Content\font\Roboto-BlackItalic-webfont.woff" />
+    <None Include="Content\font\Roboto-Bold-webfont.eot" />
+    <None Include="Content\font\Roboto-Bold-webfont.ttf" />
+    <None Include="Content\font\Roboto-Bold-webfont.woff" />
+    <None Include="Content\font\Roboto-BoldCondensed-webfont.eot" />
+    <None Include="Content\font\Roboto-BoldCondensed-webfont.ttf" />
+    <None Include="Content\font\Roboto-BoldCondensed-webfont.woff" />
+    <None Include="Content\font\Roboto-BoldCondensedItalic-webfont.eot" />
+    <None Include="Content\font\Roboto-BoldCondensedItalic-webfont.ttf" />
+    <None Include="Content\font\Roboto-BoldCondensedItalic-webfont.woff" />
+    <None Include="Content\font\Roboto-BoldItalic-webfont.eot" />
+    <None Include="Content\font\Roboto-BoldItalic-webfont.ttf" />
+    <None Include="Content\font\Roboto-BoldItalic-webfont.woff" />
+    <None Include="Content\font\Roboto-Condensed-webfont.eot" />
+    <None Include="Content\font\Roboto-Condensed-webfont.ttf" />
+    <None Include="Content\font\Roboto-Condensed-webfont.woff" />
+    <None Include="Content\font\Roboto-CondensedItalic-webfont.eot" />
+    <None Include="Content\font\Roboto-CondensedItalic-webfont.ttf" />
+    <None Include="Content\font\Roboto-CondensedItalic-webfont.woff" />
+    <None Include="Content\font\Roboto-Italic-webfont.eot" />
+    <None Include="Content\font\Roboto-Italic-webfont.ttf" />
+    <None Include="Content\font\Roboto-Italic-webfont.woff" />
+    <None Include="Content\font\Roboto-Light-webfont.eot" />
+    <None Include="Content\font\Roboto-Light-webfont.ttf" />
+    <None Include="Content\font\Roboto-Light-webfont.woff" />
+    <None Include="Content\font\Roboto-LightItalic-webfont.eot" />
+    <None Include="Content\font\Roboto-LightItalic-webfont.ttf" />
+    <None Include="Content\font\Roboto-LightItalic-webfont.woff" />
+    <None Include="Content\font\Roboto-Medium-webfont.eot" />
+    <None Include="Content\font\Roboto-Medium-webfont.ttf" />
+    <None Include="Content\font\Roboto-Medium-webfont.woff" />
+    <None Include="Content\font\Roboto-MediumItalic-webfont.eot" />
+    <None Include="Content\font\Roboto-MediumItalic-webfont.ttf" />
+    <None Include="Content\font\Roboto-MediumItalic-webfont.woff" />
+    <None Include="Content\font\Roboto-Regular-webfont.eot" />
+    <None Include="Content\font\Roboto-Regular-webfont.ttf" />
+    <None Include="Content\font\Roboto-Regular-webfont.woff" />
+    <None Include="Content\font\Roboto-Thin-webfont.eot" />
+    <None Include="Content\font\Roboto-Thin-webfont.ttf" />
+    <None Include="Content\font\Roboto-Thin-webfont.woff" />
+    <None Include="Content\font\Roboto-ThinItalic-webfont.eot" />
+    <None Include="Content\font\Roboto-ThinItalic-webfont.ttf" />
+    <None Include="Content\font\Roboto-ThinItalic-webfont.woff" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2455</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>
